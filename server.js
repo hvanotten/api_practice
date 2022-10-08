@@ -2,8 +2,9 @@ const express = require('express')
 
 const app = express()
 const PORT = 8000
+const cors = require('cors')
 
-
+app.use(cors())
 
 let Pokémon = {
   'bulbasaur': {
